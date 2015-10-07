@@ -37,37 +37,37 @@ To decompress use `func decompressedData()`.
 
 Take a look at the playground (in the included workspace) for a more detailed example.
 
-### Comparisons to Gzip
+### Comparisons to Gzip (zlib, default compression)
 
 Below are some rough benchmarks on typical JSON content running on a `iPhone 6`. A quality of `5` nets you pretty much equivalent or better results compared to Gzip on average. Increasing the quality trades compression time for better compression ratio and decompression time. 
 
-GZip vs Brotli 11
+Gzip vs Brotli 11
 ```
 Compression ratio for Gzip is 0.172223400810621
 Compression ratio for Brotli is 0.135181608066011
-Average compression time for GZip is 0.00880430042743683
+Average compression time for Gzip is 0.00880430042743683
 Average compression time for Brotli is 0.865194949507713
-Average decompression time for GZip is 0.00104959905147552
+Average decompression time for Gzip is 0.00104959905147552
 Average decompression time for Brotli is 0.0000374495983123779
 ```
 
-GZip vs Brotli 7
+Gzip vs Brotli 7
 ```
 Compression ratio for Gzip is 0.172223400810621
 Compression ratio for Brotli is 0.154989336876542
-Average compression time for GZip is 0.00890805125236511
+Average compression time for Gzip is 0.00890805125236511
 Average compression time for Brotli is 0.0193344980478287
-Average decompression time for GZip is 0.00106664896011353
+Average decompression time for Gzip is 0.00106664896011353
 Average decompression time for Brotli is 0.000058099627494812
 ```
 
-GZip vs Brotli 5
+Gzip vs Brotli 5
 ```
 Compression ratio for Gzip is 0.172223400810621
 Compression ratio for Brotli is 0.156887484507766
-Average compression time for GZip is 0.00909245014190674
+Average compression time for Gzip is 0.00909245014190674
 Average compression time for Brotli is 0.00887390077114105
-Average decompression time for GZip is 0.00109210014343262
+Average decompression time for Gzip is 0.00109210014343262
 Average decompression time for Brotli is 0.0000797003507614136
 ```
 
