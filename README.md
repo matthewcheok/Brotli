@@ -20,7 +20,7 @@ Simply add the following to your `Cartfile`:
 github "matthewcheok/Brotli"
 ```
 
-and then run `carthage update`
+and then run `carthage update --use-submodules`
 
 ### Using Brotli
 
